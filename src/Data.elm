@@ -1,4 +1,4 @@
-module Data exposing (Episode, Flags, Series, episodeDecoder, flagDecoder, seasonDecoder, seriesDecoder)
+module Data exposing (Episode, EpisodeType(..), Flags, Series, episodeDecoder, flagDecoder, seasonDecoder, seriesDecoder)
 
 import Json.Decode as Json
 import OptimizedDecoder as Decode exposing (Decoder)
@@ -20,9 +20,15 @@ type alias Episode =
     , painting : Painting
     , premierDate : String
     , summary : String
-    , type_ : String
+    , type_ : EpisodeType
     , url : String
     }
+
+
+type EpisodeType
+    = Paid
+    | Embedded
+    | External
 
 
 type alias Painting =
@@ -75,11 +81,32 @@ episodeDecoder =
                 (Decode.field "painting" postPaintingDecoder)
                 (Decode.field "premier_date" Decode.string)
                 (Decode.field "summary" Decode.string)
-                (Decode.field "type" Decode.string)
+                (Decode.field "type" episodeTypeDecoder)
     in
     Decode.map2 (<|)
         fieldSet0
         (Decode.field "url" Decode.string)
+
+
+episodeTypeDecoder : Decoder EpisodeType
+episodeTypeDecoder =
+    Decode.string |> Decode.andThen episodeTypeFromString
+
+
+episodeTypeFromString : String -> Decoder EpisodeType
+episodeTypeFromString string =
+    case string of
+        "embedded" ->
+            Decode.succeed Embedded
+
+        "paid" ->
+            Decode.succeed Paid
+
+        "external" ->
+            Decode.succeed External
+
+        _ ->
+            Decode.fail ("Invalid episode type: " ++ string)
 
 
 postPaintingDecoder : Decoder Painting

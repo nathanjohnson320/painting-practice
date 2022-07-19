@@ -1,1 +1,84 @@
-{"duration":"00:26:56","index":4,"painting":{"artist":{"name":"Bill Alexander"},"canvas":"white","colors":[{"hex":"ffffff","name":"titanium white","url":"https://store.alexanderart.com/collections/paint/products/titanium-white"},{"hex":"ffec00","name":"cadmium yellow","url":"https://store.alexanderart.com/collections/paint/products/cadmium-yellow"},{"hex":"db0000","name":"permanent red","url":"https://store.alexanderart.com/collections/paint/products/permanent-red"},{"hex":"4e1500","name":"alizarin crimson","url":"https://store.alexanderart.com/collections/paint/products/alizarin-crimson"},{"hex":"0c0040","name":"phthalo blue","url":"https://store.alexanderart.com/collections/paint/products/po-165"},{"hex":"021e44","name":"prussian blue","url":"https://store.alexanderart.com/collections/paint/products/prussian-blue"},{"hex":"0a3410","name":"sap green","url":"https://store.alexanderart.com/collections/paint/products/sap-green"},{"hex":"221b15","name":"van dyke brown","url":"https://store.alexanderart.com/collections/paint/products/van-dyke-brown"},{"hex":"ffffff","name":"magic white","url":"https://store.alexanderart.com/collections/mediums/products/medium-alexander-magic-white"}],"height":18,"title":"Autumn Lake","tools":[{"name":"2 1/2 inch brush","url":"https://store.alexanderart.com/collections/brushes/products/be-iii-brush-kit"},{"name":"1 inch brush","url":"https://store.alexanderart.com/collections/brushes/products/alexander-1-brush"},{"name":"fan brush","url":"https://store.alexanderart.com/collections/brushes/products/alexander-fan-medium-brush"},{"name":"script liner","url":"https://store.alexanderart.com/collections/brushes/products/alexander-script-liner-brush"},{"name":"palette knife","url":"https://store.alexanderart.com/collections/palette-knives/products/bills-small-palette-knife"}],"width":24},"premier_date":"1974-03-11","summary":"Bill Alexander demonstrates all the classical elements the home artist will need to create their own masterpiece.","type":"external","url":"https://www.youtube.com/watch?v=WFuQ25o1COk"}
+{
+  "duration": "00:26:56",
+  "index": 4,
+  "painting": {
+    "artist": { "name": "Bill Alexander" },
+    "canvas": "white",
+    "colors": [
+      {
+        "hex": "ffffff",
+        "name": "titanium white",
+        "url": "https://store.alexanderart.com/collections/paint/products/titanium-white"
+      },
+      {
+        "hex": "ffec00",
+        "name": "cadmium yellow",
+        "url": "https://store.alexanderart.com/collections/paint/products/cadmium-yellow"
+      },
+      {
+        "hex": "db0000",
+        "name": "permanent red",
+        "url": "https://store.alexanderart.com/collections/paint/products/permanent-red"
+      },
+      {
+        "hex": "4e1500",
+        "name": "alizarin crimson",
+        "url": "https://store.alexanderart.com/collections/paint/products/alizarin-crimson"
+      },
+      {
+        "hex": "0c0040",
+        "name": "phthalo blue",
+        "url": "https://store.alexanderart.com/collections/paint/products/po-165"
+      },
+      {
+        "hex": "021e44",
+        "name": "prussian blue",
+        "url": "https://store.alexanderart.com/collections/paint/products/prussian-blue"
+      },
+      {
+        "hex": "0a3410",
+        "name": "sap green",
+        "url": "https://store.alexanderart.com/collections/paint/products/sap-green"
+      },
+      {
+        "hex": "221b15",
+        "name": "van dyke brown",
+        "url": "https://store.alexanderart.com/collections/paint/products/van-dyke-brown"
+      },
+      {
+        "hex": "ffffff",
+        "name": "magic white",
+        "url": "https://store.alexanderart.com/collections/mediums/products/medium-alexander-magic-white"
+      }
+    ],
+    "height": 18,
+    "title": "Autumn Lake",
+    "tools": [
+      {
+        "name": "2 1/2 inch brush",
+        "url": "https://store.alexanderart.com/collections/brushes/products/be-iii-brush-kit"
+      },
+      {
+        "name": "1 inch brush",
+        "url": "https://store.alexanderart.com/collections/brushes/products/alexander-1-brush"
+      },
+      {
+        "name": "fan brush",
+        "url": "https://store.alexanderart.com/collections/brushes/products/alexander-fan-medium-brush"
+      },
+      {
+        "name": "script liner",
+        "url": "https://store.alexanderart.com/collections/brushes/products/alexander-script-liner-brush"
+      },
+      {
+        "name": "palette knife",
+        "url": "https://store.alexanderart.com/collections/palette-knives/products/bills-small-palette-knife"
+      }
+    ],
+    "width": 24
+  },
+  "premier_date": "1974-03-11",
+  "summary": "Bill Alexander demonstrates all the classical elements the home artist will need to create their own masterpiece.",
+  "type": "external",
+  "url": "https://www.youtube.com/watch?v=WFuQ25o1COk"
+}

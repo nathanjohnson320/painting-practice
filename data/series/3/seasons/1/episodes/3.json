@@ -1,1 +1,70 @@
-{"duration":"00:27:35","index":3,"painting":{"artist":{"name":"Bill Alexander"},"canvas":"white","colors":[{"hex":"ffffff","name":"titanium white","url":"https://store.alexanderart.com/collections/paint/products/titanium-white"},{"hex":"ffec00","name":"cadmium yellow","url":"https://store.alexanderart.com/collections/paint/products/cadmium-yellow"},{"hex":"db0000","name":"permanent red","url":"https://store.alexanderart.com/collections/paint/products/permanent-red"},{"hex":"4e1500","name":"alizarin crimson","url":"https://store.alexanderart.com/collections/paint/products/alizarin-crimson"},{"hex":"0c0040","name":"phthalo blue","url":"https://store.alexanderart.com/collections/paint/products/po-165"},{"hex":"000000","name":"ivory black","url":"https://store.alexanderart.com/collections/paint/products/ivory-black"},{"hex":"ffffff","name":"magic white","url":"https://store.alexanderart.com/collections/mediums/products/medium-alexander-magic-white"}],"height":18,"title":"Along the Moulon Rouge","tools":[{"name":"leaf brush","url":"https://store.alexanderart.com/collections/brushes/products/alexander-bristle-brush"},{"name":"2 1/2 inch brush","url":"https://store.alexanderart.com/collections/brushes/products/be-iii-brush-kit"},{"name":"script liner","url":"https://store.alexanderart.com/collections/brushes/products/alexander-script-liner-brush"},{"name":"palette knife","url":"https://store.alexanderart.com/collections/palette-knives/products/bills-small-palette-knife"}],"width":24},"premier_date":"1974-03-04","summary":"Bill creates a beautiful cityscape.","type":"paid","url":"https://store.alexanderart.com/collections/dvds-downloads/products/along-the-moulin-rouge"}
+{
+  "duration": "00:27:35",
+  "index": 3,
+  "painting": {
+    "artist": { "name": "Bill Alexander" },
+    "canvas": "white",
+    "colors": [
+      {
+        "hex": "ffffff",
+        "name": "titanium white",
+        "url": "https://store.alexanderart.com/collections/paint/products/titanium-white"
+      },
+      {
+        "hex": "ffec00",
+        "name": "cadmium yellow",
+        "url": "https://store.alexanderart.com/collections/paint/products/cadmium-yellow"
+      },
+      {
+        "hex": "db0000",
+        "name": "permanent red",
+        "url": "https://store.alexanderart.com/collections/paint/products/permanent-red"
+      },
+      {
+        "hex": "4e1500",
+        "name": "alizarin crimson",
+        "url": "https://store.alexanderart.com/collections/paint/products/alizarin-crimson"
+      },
+      {
+        "hex": "0c0040",
+        "name": "phthalo blue",
+        "url": "https://store.alexanderart.com/collections/paint/products/po-165"
+      },
+      {
+        "hex": "000000",
+        "name": "ivory black",
+        "url": "https://store.alexanderart.com/collections/paint/products/ivory-black"
+      },
+      {
+        "hex": "ffffff",
+        "name": "magic white",
+        "url": "https://store.alexanderart.com/collections/mediums/products/medium-alexander-magic-white"
+      }
+    ],
+    "height": 18,
+    "title": "Along the Moulon Rouge",
+    "tools": [
+      {
+        "name": "leaf brush",
+        "url": "https://store.alexanderart.com/collections/brushes/products/alexander-bristle-brush"
+      },
+      {
+        "name": "2 1/2 inch brush",
+        "url": "https://store.alexanderart.com/collections/brushes/products/be-iii-brush-kit"
+      },
+      {
+        "name": "script liner",
+        "url": "https://store.alexanderart.com/collections/brushes/products/alexander-script-liner-brush"
+      },
+      {
+        "name": "palette knife",
+        "url": "https://store.alexanderart.com/collections/palette-knives/products/bills-small-palette-knife"
+      }
+    ],
+    "width": 24
+  },
+  "premier_date": "1974-03-04",
+  "summary": "Bill creates a beautiful cityscape.",
+  "type": "paid",
+  "url": "https://store.alexanderart.com/collections/dvds-downloads/products/along-the-moulin-rouge"
+}

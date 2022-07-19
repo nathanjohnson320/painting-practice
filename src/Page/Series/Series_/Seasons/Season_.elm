@@ -393,7 +393,7 @@ view _ _ model static =
 episodeView : RouteParams -> Episode -> Html.Styled.Html Msg
 episodeView { series, season } episode =
     a
-        [ Attr.href <| "/series/" ++ series ++ "/season/" ++ season ++ "/episode/" ++ String.fromInt episode.index
+        [ Attr.href <| "/series/" ++ series ++ "/seasons/" ++ season ++ "/episodes/" ++ String.fromInt episode.index
         , css
             [ Tw.cursor_pointer
             , Tw.flex
