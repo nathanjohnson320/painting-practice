@@ -34,8 +34,8 @@ head _ =
 manifest : Data -> Manifest.Config
 manifest _ =
     Manifest.init
-        { name = "Site Name"
-        , description = "Description"
+        { name = "Paint by Nate Practice"
+        , description = "Free and paid resources from great wet on wet technique oil painters."
         , startUrl = Route.Index |> Route.toPath
         , icons = []
         }

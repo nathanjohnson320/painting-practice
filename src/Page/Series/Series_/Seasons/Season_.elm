@@ -343,7 +343,8 @@ view _ _ model static =
                                 [ Attr.type_ "button"
                                 , onClick Search
                                 , css
-                                    [ Tw.inline_flex
+                                    [ Tw.mt_4
+                                    , Tw.inline_flex
                                     , Tw.items_center
                                     , Tw.px_2_dot_5
                                     , Tw.py_1_dot_5

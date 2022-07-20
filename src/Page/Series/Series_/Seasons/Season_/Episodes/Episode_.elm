@@ -242,14 +242,7 @@ view _ _ static =
                             ]
                             [ figure []
                                 [ div
-                                    [ css
-                                        [ Tw.aspect_w_12
-                                        , Tw.aspect_h_7
-                                        , Bp.lg
-                                            [ Tw.aspect_none
-                                            ]
-                                        ]
-                                    ]
+                                    []
                                     [ videoView static.routeParams static.data.episode
                                     ]
                                 , figcaption
@@ -260,16 +253,22 @@ view _ _ static =
                                         , Tw.text_gray_500
                                         ]
                                     ]
-                                    [ node "videocameraicon"
-                                        [ css
+                                    [ svg
+                                        [ SvgAttr.css
                                             [ Tw.flex_none
                                             , Tw.w_5
                                             , Tw.h_5
                                             , Tw.text_gray_400
                                             ]
+                                        , SvgAttr.viewBox "0 0 20 20"
+                                        , SvgAttr.fill "currentColor"
                                         , Attr.attribute "aria-hidden" "true"
                                         ]
-                                        []
+                                        [ path
+                                            [ SvgAttr.d "M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                                            ]
+                                            []
+                                        ]
                                     , span
                                         [ css
                                             [ Tw.ml_2
@@ -330,10 +329,9 @@ view _ _ static =
                         , div
                             [ css [ Tw.mt_5 ]
                             ]
-                            ([ p []
+                            (p []
                                 [ text "Colors" ]
-                             ]
-                                ++ List.map
+                                :: List.map
                                     (\color ->
                                         div
                                             [ css
