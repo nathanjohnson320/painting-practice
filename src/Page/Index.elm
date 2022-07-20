@@ -49,16 +49,16 @@ head :
 head _ =
     Seo.summary
         { canonicalUrlOverride = Nothing
-        , siteName = "elm-pages"
+        , siteName = "Paint By Nate"
         , image =
-            { url = Pages.Url.external "TODO"
-            , alt = "elm-pages logo"
+            { url = Pages.Url.external "/img/logo.svg"
+            , alt = "Painting Pallette"
             , dimensions = Nothing
             , mimeType = Nothing
             }
-        , description = "TODO"
+        , description = "Free and paid resources from great wet on wet technique oil painters."
         , locale = Nothing
-        , title = "TODO title" -- metadata.title -- TODO
+        , title = "Paint By Nate - Index"
         }
         |> Seo.website
 

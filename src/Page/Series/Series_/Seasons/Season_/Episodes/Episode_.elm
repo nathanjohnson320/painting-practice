@@ -7,7 +7,7 @@ import DataSource.File as File
 import DataSource.Glob as Glob
 import Head
 import Head.Seo as Seo
-import Html.Styled exposing (a, div, figcaption, figure, h2, h3, iframe, img, li, node, p, span, text, ul)
+import Html.Styled exposing (a, div, figcaption, figure, h2, h3, iframe, img, li, p, span, text, ul)
 import Html.Styled.Attributes as Attr exposing (css)
 import Page exposing (Page, StaticPayload)
 import Pages.PageUrl exposing (PageUrl)
@@ -77,19 +77,19 @@ data { series, season, episode } =
 head :
     StaticPayload Data RouteParams
     -> List Head.Tag
-head _ =
+head static =
     Seo.summary
         { canonicalUrlOverride = Nothing
-        , siteName = "elm-pages"
+        , siteName = "Paint By Nate"
         , image =
-            { url = Pages.Url.external "TODO"
-            , alt = "elm-pages logo"
+            { url = Pages.Url.external "/img/logo.svg"
+            , alt = "painting pallette"
             , dimensions = Nothing
             , mimeType = Nothing
             }
-        , description = "TODO"
+        , description = static.data.episode.summary
         , locale = Nothing
-        , title = "TODO title" -- metadata.title -- TODO
+        , title = static.data.episode.painting.title
         }
         |> Seo.website
 
@@ -132,7 +132,7 @@ view :
     -> StaticPayload Data RouteParams
     -> View Msg
 view _ _ static =
-    View.placeholder "Practice Painting Videos"
+    View.placeholder static.data.episode.painting.title
         [ div
             [ css
                 [ Tw.bg_white

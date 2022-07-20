@@ -11,6 +11,7 @@ import Head.Seo as Seo
 import Html.Styled exposing (a, button, div, h2, img, option, p, select, text)
 import Html.Styled.Attributes as Attr exposing (css)
 import Html.Styled.Events exposing (onClick, onInput)
+import List.Extra
 import Page exposing (StaticPayload)
 import Pages.PageUrl exposing (PageUrl)
 import Pages.Url
@@ -154,19 +155,23 @@ data { series, season } =
 head :
     StaticPayload Data RouteParams
     -> List Head.Tag
-head _ =
+head static =
+    let
+        series =
+            List.Extra.find (\s -> String.fromInt s.index == static.routeParams.series) static.data.series |> Maybe.withDefault { index = 1, title = "" }
+    in
     Seo.summary
         { canonicalUrlOverride = Nothing
-        , siteName = "elm-pages"
+        , siteName = "Paint By Nate"
         , image =
-            { url = Pages.Url.external "TODO"
-            , alt = "elm-pages logo"
+            { url = Pages.Url.external "/img/logo.svg"
+            , alt = "Painting pallette"
             , dimensions = Nothing
             , mimeType = Nothing
             }
-        , description = "TODO"
+        , description = "Videos from " ++ series.title ++ " Season " ++ static.routeParams.season
         , locale = Nothing
-        , title = "TODO title" -- metadata.title -- TODO
+        , title = "Paint By Nate - Browse"
         }
         |> Seo.website
 
@@ -200,7 +205,7 @@ view _ _ model static =
         episodes =
             List.sortBy .index static.data.episodes
     in
-    View.placeholder "Listing Episodes"
+    View.placeholder "Paint By Nate - Browse"
         [ div []
             [ div
                 [ css
