@@ -73,7 +73,8 @@ view :
     -> StaticPayload Data RouteParams
     -> View Msg
 view _ _ _ =
-    View.placeholder "Practice Painting Videos"
+    { title = "Practice Painting Videos"
+    , body =
         [ div
             [ css
                 [ Tw.mt_16
@@ -298,3 +299,4 @@ view _ _ _ =
                 ]
             ]
         ]
+    }

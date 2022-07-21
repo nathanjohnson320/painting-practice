@@ -132,7 +132,8 @@ view :
     -> StaticPayload Data RouteParams
     -> View Msg
 view _ _ static =
-    View.placeholder static.data.episode.painting.title
+    { title = static.data.episode.painting.title
+    , body =
         [ div
             [ css
                 [ Tw.bg_white
@@ -369,6 +370,7 @@ view _ _ static =
                 ]
             ]
         ]
+    }
 
 
 videoView : RouteParams -> Episode -> Html.Styled.Html Msg

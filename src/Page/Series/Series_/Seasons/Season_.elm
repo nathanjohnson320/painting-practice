@@ -205,7 +205,8 @@ view _ _ model static =
         episodes =
             List.sortBy .index static.data.episodes
     in
-    View.placeholder "Paint By Nate - Browse"
+    { title = "Paint By Nate - Browse"
+    , body =
         [ div []
             [ div
                 [ css
@@ -394,6 +395,7 @@ view _ _ model static =
                 (List.map (episodeView static.routeParams) episodes)
             ]
         ]
+    }
 
 
 episodeView : RouteParams -> Episode -> Html.Styled.Html Msg
