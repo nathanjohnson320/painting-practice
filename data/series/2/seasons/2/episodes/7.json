@@ -1,6 +1,6 @@
 {
-  "duration": "00:19:47",
-  "index": 6,
+  "duration": "00:14:56",
+  "index": 7,
   "painting": {
     "artist": { "name": "Kevin Hill" },
     "canvas": "white",
@@ -21,6 +21,11 @@
         "url": "https://www.dickblick.com/items/gamblin-1980-oils-prussian-blue-150-ml-tube/"
       },
       {
+        "hex": "db0000",
+        "name": "napthol red",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-naphthol-red-150-ml-tube/"
+      },
+      {
         "hex": "c79b00",
         "name": "yellow ochre",
         "url": "https://www.dickblick.com/items/gamblin-1980-oils-yellow-ochre-150-ml-tube/"
@@ -36,41 +41,16 @@
         "url": "https://www.dickblick.com/items/gamblin-1980-oils-ivory-black-150-ml-tube/"
       },
       {
-        "hex": "db0000",
-        "name": "napthol red",
-        "url": "https://www.dickblick.com/items/gamblin-1980-oils-naphthol-red-150-ml-tube/"
-      },
-      {
         "hex": "ffec00",
         "name": "hansa yellow",
         "url": "https://www.dickblick.com/items/gamblin-1980-oils-hansa-yellow-light-150-ml-tube/"
       }
     ],
     "height": 18,
-    "title": "Spring Meadow Creek",
+    "title": "Desert Canyon",
     "tools": [
       {
         "name": "2 inch brush",
-        "url": "https://paintwithkevin.com/brushes-for-sale.html"
-      },
-      {
-        "name": "blender brush",
-        "url": "https://paintwithkevin.com/brushes-for-sale.html"
-      },
-      {
-        "name": "1 inch brush",
-        "url": "https://paintwithkevin.com/brushes-for-sale.html"
-      },
-      {
-        "name": "custom detail round",
-        "url": "https://paintwithkevin.com/brushes-for-sale.html"
-      },
-      {
-        "name": "fan brush",
-        "url": "https://paintwithkevin.com/brushes-for-sale.html"
-      },
-      {
-        "name": "1/4 flat",
         "url": "https://paintwithkevin.com/brushes-for-sale.html"
       },
       {
@@ -78,7 +58,15 @@
         "url": "https://paintwithkevin.com/brushes-for-sale.html"
       },
       {
-        "name": "custom script liner",
+        "name": "palette knife",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "fan brush",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "custom detail round",
         "url": "https://paintwithkevin.com/brushes-for-sale.html"
       },
       {
@@ -88,8 +76,8 @@
     ],
     "width": 24
   },
-  "premier_date": "2022-05-08",
-  "summary": "Springtime blossoms and a happy little creek.",
+  "premier_date": "2022-06-06",
+  "summary": "Desert scene done primarily with the palette knife.",
   "type": "embedded",
-  "url": "https://www.youtube.com/watch?v=FtLDH3MXDpc"
+  "url": "https://www.youtube.com/watch?v=0YsbYU_Y7As"
 }
