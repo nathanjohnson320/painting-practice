@@ -1,6 +1,7 @@
-module Data exposing (Episode, EpisodeType(..), Flags, Series, episodeDecoder, flagDecoder, seasonDecoder, seriesDecoder)
+module Data exposing (Artist, Color, Episode, EpisodeType(..), Flags, Painting, Series, Tool, encodedEpisode, episodeDecoder, flagDecoder, seriesDecoder)
 
 import Json.Decode as Json
+import Json.Encode
 import OptimizedDecoder as Decode exposing (Decoder)
 
 
@@ -60,15 +61,72 @@ type alias Tool =
     }
 
 
-type alias Season =
-    { index : Int
-    }
-
-
 type alias Series =
     { index : Int
     , title : String
     }
+
+
+encodedEpisode : Episode -> Json.Encode.Value
+encodedEpisode episode =
+    let
+        type_ =
+            case episode.type_ of
+                Embedded ->
+                    "embedded"
+
+                Paid ->
+                    "paid"
+
+                External ->
+                    "external"
+    in
+    Json.Encode.object
+        [ ( "duration", Json.Encode.string episode.duration )
+        , ( "index", Json.Encode.int episode.index )
+        , ( "painting", encodedPainting episode.painting )
+        , ( "premier_date", Json.Encode.string episode.premierDate )
+        , ( "summary", Json.Encode.string episode.summary )
+        , ( "type", Json.Encode.string type_ )
+        , ( "url", Json.Encode.string episode.url )
+        ]
+
+
+encodedPainting : Painting -> Json.Encode.Value
+encodedPainting painting =
+    Json.Encode.object
+        [ ( "artist", encodedArtist painting.artist )
+        , ( "canvas", Json.Encode.string painting.canvas )
+        , ( "colors", Json.Encode.list encodedColor painting.colors )
+        , ( "height", Json.Encode.int painting.height )
+        , ( "title", Json.Encode.string painting.title )
+        , ( "tools", Json.Encode.list encodedTool painting.tools )
+        , ( "width", Json.Encode.int painting.width )
+        ]
+
+
+encodedArtist : Artist -> Json.Encode.Value
+encodedArtist artist =
+    Json.Encode.object
+        [ ( "name", Json.Encode.string artist.name )
+        ]
+
+
+encodedColor : Color -> Json.Encode.Value
+encodedColor color =
+    Json.Encode.object
+        [ ( "hex", Json.Encode.string color.hex )
+        , ( "name", Json.Encode.string color.name )
+        , ( "url", Json.Encode.string color.url )
+        ]
+
+
+encodedTool : Tool -> Json.Encode.Value
+encodedTool tool =
+    Json.Encode.object
+        [ ( "name", Json.Encode.string tool.name )
+        , ( "url", Json.Encode.string tool.url )
+        ]
 
 
 episodeDecoder : Decoder Episode
@@ -140,12 +198,6 @@ postToolDecoder =
     Decode.map2 Tool
         (Decode.field "name" Decode.string)
         (Decode.field "url" Decode.string)
-
-
-seasonDecoder : Decoder Season
-seasonDecoder =
-    Decode.map Season
-        (Decode.field "index" Decode.int)
 
 
 seriesDecoder : Decoder Series
