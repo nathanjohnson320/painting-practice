@@ -1,4 +1,4 @@
-module Page.Series.Series_.Seasons.Season_ exposing (..)
+module Page.Series.Series_.Seasons.Season_ exposing (Data, Model, Msg(..), RouteParams, page)
 
 import Browser.Navigation
 import Css

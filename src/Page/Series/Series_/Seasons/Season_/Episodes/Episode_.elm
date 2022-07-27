@@ -1,4 +1,4 @@
-module Page.Series.Series_.Seasons.Season_.Episodes.Episode_ exposing (..)
+module Page.Series.Series_.Seasons.Season_.Episodes.Episode_ exposing (Data, Model, Msg, RouteParams, VideoSource(..), page)
 
 import Css
 import Data exposing (Episode, EpisodeType(..), episodeDecoder)
@@ -19,7 +19,7 @@ import Svg.Styled.Attributes as SvgAttr
 import Tailwind.Breakpoints as Bp
 import Tailwind.Utilities as Tw
 import Url
-import Url.Parser as Parser exposing ((</>), (<?>), s)
+import Url.Parser as Parser exposing ((<?>), s)
 import Url.Parser.Query as Query
 import View exposing (View)
 

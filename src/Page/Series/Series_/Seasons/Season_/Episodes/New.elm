@@ -1,4 +1,4 @@
-port module Page.Series.Series_.Seasons.Season_.Episodes.New exposing (Data, Model, Msg(..), RouteParams, page)
+port module Page.Series.Series_.Seasons.Season_.Episodes.New exposing (Data, EpisodeForm, Model, Msg(..), PaintingForm, RouteParams, page)
 
 import Browser.Navigation
 import Components exposing (input)
@@ -10,7 +10,7 @@ import DataSource.Glob as Glob
 import Head
 import Head.Seo as Seo
 import Html.Styled exposing (button, div, h3, label, option, p, select, text, textarea)
-import Html.Styled.Attributes as Attr exposing (css, type_, value)
+import Html.Styled.Attributes as Attr exposing (css, value)
 import Html.Styled.Events exposing (onClick, onInput)
 import Json.Decode
 import Json.Encode

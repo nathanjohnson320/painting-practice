@@ -37,7 +37,6 @@ type Msg
         , query : Maybe String
         , fragment : Maybe String
         }
-    | SharedMsg SharedMsg
 
 
 type alias Data =
@@ -87,13 +86,7 @@ init _ flags _ =
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
-    case msg of
-        OnPageChange _ ->
-            ( model, Cmd.none )
-
-        SharedMsg _ ->
-            -- SharedMsg globalMsg
-            ( model, Cmd.none )
+    ( model, Cmd.none )
 
 
 subscriptions : Path -> Model -> Sub Msg
