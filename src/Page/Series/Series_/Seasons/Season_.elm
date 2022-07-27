@@ -19,6 +19,7 @@ import Path
 import Shared
 import Tailwind.Breakpoints as Bp
 import Tailwind.Utilities as Tw
+import Utils exposing (episodeLabel)
 import View exposing (View)
 
 
@@ -486,8 +487,3 @@ episodeView { series, season } episode =
                 ]
             ]
         ]
-
-
-episodeLabel : String -> Episode -> String
-episodeLabel season { index } =
-    "S" ++ String.padLeft 2 '0' season ++ "E" ++ String.padLeft 2 '0' (String.fromInt index)

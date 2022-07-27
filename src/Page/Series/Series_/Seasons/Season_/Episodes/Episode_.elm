@@ -21,6 +21,7 @@ import Tailwind.Utilities as Tw
 import Url
 import Url.Parser as Parser exposing ((<?>), s)
 import Url.Parser.Query as Query
+import Utils exposing (episodeLabel)
 import View exposing (View)
 
 
@@ -275,7 +276,7 @@ view _ _ static =
                                             [ Tw.ml_2
                                             ]
                                         ]
-                                        [ text <| static.data.episode.painting.artist.name ]
+                                        [ text <| static.data.episode.painting.artist.name ++ " " ++ episodeLabel static.routeParams.series static.data.episode ]
                                     ]
                                 ]
                             ]
