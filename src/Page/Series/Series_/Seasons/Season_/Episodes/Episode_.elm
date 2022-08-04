@@ -276,7 +276,7 @@ view _ _ static =
                                             [ Tw.ml_2
                                             ]
                                         ]
-                                        [ text <| static.data.episode.painting.artist.name ++ " " ++ episodeLabel static.routeParams.series static.data.episode ]
+                                        [ text <| static.data.episode.painting.artist.name ++ " " ++ episodeLabel static.routeParams.season static.data.episode ]
                                     ]
                                 ]
                             ]
