@@ -1,0 +1,92 @@
+{
+  "duration": "20:15",
+  "index": 12,
+  "painting": {
+    "artist": { "name": "Kevin Hill" },
+    "canvas": "white",
+    "colors": [
+      {
+        "hex": "5f2e1f",
+        "name": "burnt umber",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-burnt-umber-150-ml-tube/"
+      },
+      {
+        "hex": "ffffff",
+        "name": "clear gel",
+        "url": "https://www.dickblick.com/products/gamblin-galkyd-gel-medium/"
+      },
+      {
+        "hex": "ffec00",
+        "name": "hansa yellow",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-hansa-yellow-light-150-ml-tube/"
+      },
+      {
+        "hex": "000000",
+        "name": "ivory black",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-ivory-black-150-ml-tube/"
+      },
+      {
+        "hex": "db0000",
+        "name": "napthol red",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-naphthol-red-150-ml-tube/"
+      },
+      {
+        "hex": "021e44",
+        "name": "prussian blue",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-prussian-blue-150-ml-tube/"
+      },
+      {
+        "hex": "0a3410",
+        "name": "sap green",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-sap-green-150-ml-tube/"
+      },
+      {
+        "hex": "ffffff",
+        "name": "titanium white",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-titanium-white-150-ml-tube/"
+      },
+      {
+        "hex": "c79b00",
+        "name": "yellow ochre",
+        "url": "https://www.dickblick.com/items/gamblin-1980-oils-yellow-ochre-150-ml-tube/"
+      }
+    ],
+    "height": 18,
+    "title": "Glacier Waterfall",
+    "tools": [
+      {
+        "name": "1 inch brush",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "3/4 flat",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "custom detail round",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "custom script liner",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "fan brush",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "filbert brush",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      },
+      {
+        "name": "palette knife",
+        "url": "https://paintwithkevin.com/brushes-for-sale.html"
+      }
+    ],
+    "width": 24
+  },
+  "premier_date": "2022-09-17T00:00",
+  "summary": "Kevin paints some large mountains and soft treeline with some snow.",
+  "type": "embedded",
+  "url": "https://www.youtube.com/watch?v=wwO8Yi9_raE"
+}
